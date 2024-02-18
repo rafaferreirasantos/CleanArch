@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CleanArch.Domain.Abstractions
 {
-  internal interface IMemberRepository
+  public interface IMemberRepository
   {
     Task<IEnumerable<Member>> GetMember();
     Task<Member> GetMemberById(int idMember);
