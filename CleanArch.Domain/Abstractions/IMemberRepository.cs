@@ -9,10 +9,10 @@ namespace CleanArch.Domain.Abstractions
 {
   internal interface IMemberRepository
   {
-    Task<IEnumerable<Member>> GetAll();
-    Task<Member> GetById(int idMember);
+    Task<IEnumerable<Member>> GetMember();
+    Task<Member> GetMemberById(int idMember);
     Task<Member> Add(Member member);
-    Task<Member> Update(Member member);
-    Task Delete(int idMember);
+    void Update(Member member);
+    Task<Member> Delete(int idMember);
   }
 }
