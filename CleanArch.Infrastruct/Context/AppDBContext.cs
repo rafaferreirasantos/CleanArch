@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CleanArch.Infrastruct.Context
 {
-  internal class AppDBContext : DbContext
+  public class AppDBContext : DbContext
   {
     public AppDBContext(DbContextOptions options) : base(options)
     {
