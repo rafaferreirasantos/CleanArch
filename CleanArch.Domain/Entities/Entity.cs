@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CleanArch.Domain.Entities
 {
-  internal abstract class Entity
+  public abstract class Entity
   {
     public int Id { get; protected set; }
   }

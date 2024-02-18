@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CleanArch.Domain.Entities
 {
-  internal sealed class Member : Entity
+  public sealed class Member : Entity
   {
     public string? FirstName { get; private set; }
     public string? LastName { get; private set; }
