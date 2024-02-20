@@ -1,5 +1,5 @@
 ﻿using CleanArch.Domain.Entities;
-using CleanArch.Infrastruct.EntityConfiguration;
+using CleanArch.Infrastructure.EntityConfiguration;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CleanArch.Infrastruct.Context
+namespace CleanArch.Infrastructure.Context
 {
   public class AppDBContext : DbContext
   {

@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace CleanArch.Infrastruct.EntityConfiguration
+namespace CleanArch.Infrastructure.EntityConfiguration
 {
   internal class MemberConfiguration : IEntityTypeConfiguration<Member>
   {

@@ -1,0 +1,18 @@
+version: "3.5"
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rv167vvbr
+      MYSQL_DATABASE: MembersDB
+      MYSQL_USER: cleanarch
+      MYSQL_PASSWORD: 123mudar
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+volumes:
+  db_data:
+    driver: local

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace CleanArch.Domain.Entities
@@ -15,11 +16,14 @@ namespace CleanArch.Domain.Entities
     public string? Email { get; private set; }
     public bool? IsActive { get; set; }
 
+    public Member() { }
+
     public Member(string firstName, string lastName, string gender, string email, bool? isActive)
     {
       ValidateDomain(firstName, lastName, gender, email, isActive);
     }
 
+    [JsonConstructor]
     public Member(int id, string firstName, string lastName, string gender, string email, bool? isActive)
     {
       DomainValidation.When(id < 0, "Invalid ID value.");
@@ -56,6 +60,12 @@ namespace CleanArch.Domain.Entities
       DomainValidation.When(
         !isActive.HasValue,
         "isActive must be informed");
+
+      FirstName = firstName;
+      LastName = lastName;
+      Gender = gender;
+      Email = email;
+      IsActive = isActive;
     }
   }
 

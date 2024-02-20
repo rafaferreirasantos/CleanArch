@@ -1,14 +1,14 @@
 ﻿using CleanArch.Domain.Abstractions;
-using CleanArch.Infrastruct.Context;
+using CleanArch.Infrastructure.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CleanArch.Infrastruct.Repositories
+namespace CleanArch.Infrastructure.Repositories
 {
-  public class UnitOfWork : IUnitofWork, IDisposable
+  public class UnitOfWork : IUnitOfWork, IDisposable
   {
 
     private IMemberRepository? _memberRepository;

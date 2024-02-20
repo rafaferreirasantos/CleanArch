@@ -1,6 +1,6 @@
 ﻿using CleanArch.Domain.Abstractions;
 using CleanArch.Domain.Entities;
-using CleanArch.Infrastruct.Context;
+using CleanArch.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CleanArch.Infrastruct.Repositories
+namespace CleanArch.Infrastructure.Repositories
 {
   public class MemberRepository : IMemberRepository
   {
